@@ -17,7 +17,7 @@ public class HelloWorldController {
     private static final String MESSAGE_FORMAT = "Hello %s!";
 
     @RequestMapping(method = RequestMethod.GET)
-    public Response helloWorldGet(@RequestParam(value = "name", defaultValue = "Mursid") String name) {
+    public Response helloWorldGet(@RequestParam(value = "name", defaultValue = "Mursid is a java developer") String name) {
         return new Response(String.format(MESSAGE_FORMAT, name));
     }
 
